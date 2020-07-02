@@ -88,7 +88,6 @@ header p {
 
 #div-left img {
     padding-bottom: 20px;
-/*    clip-path: circle(80px at center);*/
 }
 
 #div-left img {
@@ -120,7 +119,6 @@ header p {
     color: black;
     padding: 20px;
     flex: 1;
-    
 }
 
 footer {
@@ -131,10 +129,6 @@ footer {
     margin: 20px;
     color: currentColor;
     background-color: #e2e5e5;
-}
-
-footer .f-content {
-    
 }
 
 .progress-bar-parent {
@@ -218,7 +212,6 @@ footer .f-content {
 
 .titles h5 {
     padding-top: 0;
-    
     margin-top: 0;
     color: #61e7e4;
     font-size: 15px;
@@ -269,16 +262,3 @@ footer .f-content {
 .block {
     border-left: black solid;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
