@@ -1,0 +1,19 @@
+body {
+    align-content: center;
+}
+
+.gallery {
+    margin: 20px 100px;
+}
+
+.gallery img {
+    transition: 2s;
+    padding: 15px;
+    width: 280px;
+    height: 210px;
+}
+
+.gallery img:hover {
+    filter: opacity(50%);
+    transform: scale(1.1);
+}
