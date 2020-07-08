@@ -268,7 +268,6 @@ footer {
     padding: 20px 40px;
     font-size: 15px;
     min-width: 300px;
-    font-family: "Lucida Console", Courier, monospace;
 }
 
 .table thead tr {
@@ -283,11 +282,11 @@ footer {
     text-align: center;
 }
 
-.table tbody tr:nth-child(1), .table tbody tr:nth-child(3), .table tbody tr:nth-child(5) {
+.table tbody tr:nth-child(2n+1) {
         background-color: #b0ddfe;
 }
 
-.table tbody tr:nth-child(2), .table tbody tr:nth-child(4) {
+.table tbody tr:nth-child(2n) {
         background-color: white;
 }
 
@@ -295,4 +294,5 @@ body {
     padding: 20px;
     margin: 20px;
     background-color: white;
+    font-family: "Lucida Console", Courier, monospace;
 }
