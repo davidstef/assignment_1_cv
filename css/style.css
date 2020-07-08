@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #c1d9db;
+    align-content: center;
 }
 
 header {
@@ -263,6 +264,24 @@ footer {
     border-left: black solid;
 }
 
+<<<<<<< HEAD
+/****** Gallery ******/
+
+.gallery {
+    margin: 20px 100px;
+}
+
+.gallery img {
+    transition: 2s;
+    padding: 15px;
+    width: 280px;
+    height: 210px;
+}
+
+.gallery img:hover {
+    filter: opacity(50%);
+    transform: scale(1.1);
+=======
 .table {
     border-collapse: collapse;
     padding: 20px 40px;
@@ -295,4 +314,5 @@ body {
     margin: 20px;
     background-color: white;
     font-family: "Lucida Console", Courier, monospace;
+>>>>>>> 1a82d6d184a282453f44bd37c14af2b9a8f653c3
 }
