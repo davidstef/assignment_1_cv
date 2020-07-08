@@ -6,7 +6,7 @@ body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #c1d9db;
+    background-color: darkgray;
 }
 
 header {
@@ -261,4 +261,40 @@ footer {
 
 .block {
     border-left: black solid;
+}
+
+/****** Banner ******/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.banner .banner_1 {
+    align-self: center;
+}
+
+.banner .banner_2 {
+    align-self: center;
+}
+
+.banner .banner_3 {
+    align-self: center;
+}
+
+.banner .banner_4 {
+    align-self: center;
+}
+
+.banner img {
+    padding: 15px;
+    width: 600px;
+    height: 210px;
+}
+
+.banner img:hover {
+    filter: saturate(100%);
+    transform: scale(1.01);
 }
