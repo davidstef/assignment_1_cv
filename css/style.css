@@ -271,8 +271,6 @@ footer {
 }
 
 .menu ul {
-    width: 700px;
-	overflow: hidden;
     background-color: #282424;
     margin: 50px auto;
     border-radius: 6px;
@@ -282,7 +280,6 @@ footer {
 
 .nav-bar {
     padding: 0;
-    width: 700px;
     margin: 50px;
     border-bottom: 5px blue solid;
     background-color: #3d2c2c;
@@ -301,6 +298,8 @@ footer {
     float: left;
     box-shadow: 1px 0 0 #444444;
     position: relative;
+    background-color: black;
+    border-bottom: 6px solid blue;
 }
 
 .menu a {
@@ -346,6 +345,7 @@ footer {
     display: block;
     border: 0;
     box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    width: 150px;
 }
 
 .menu ul li:last-child {
