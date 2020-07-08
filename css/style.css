@@ -262,3 +262,37 @@ footer {
 .block {
     border-left: black solid;
 }
+
+.table {
+    border-collapse: collapse;
+    padding: 20px 40px;
+    font-size: 15px;
+    min-width: 300px;
+}
+
+.table thead tr {
+    background-color: #4ab4ff;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.table tbody tr:nth-child(2n+1) {
+        background-color: #b0ddfe;
+}
+
+.table tbody tr:nth-child(2n) {
+        background-color: white;
+}
+
+body {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    font-family: "Lucida Console", Courier, monospace;
+}
