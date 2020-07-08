@@ -264,6 +264,7 @@ footer {
     border-left: black solid;
 }
 
+<<<<<<< HEAD
 /****** Gallery ******/
 
 .gallery {
@@ -280,4 +281,38 @@ footer {
 .gallery img:hover {
     filter: opacity(50%);
     transform: scale(1.1);
+=======
+.table {
+    border-collapse: collapse;
+    padding: 20px 40px;
+    font-size: 15px;
+    min-width: 300px;
+}
+
+.table thead tr {
+    background-color: #4ab4ff;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.table tbody tr:nth-child(2n+1) {
+        background-color: #b0ddfe;
+}
+
+.table tbody tr:nth-child(2n) {
+        background-color: white;
+}
+
+body {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    font-family: "Lucida Console", Courier, monospace;
+>>>>>>> 1a82d6d184a282453f44bd37c14af2b9a8f653c3
 }
