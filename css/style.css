@@ -2,12 +2,18 @@
     box-sizing: border-box;
 }
 
+.darkgray {
+    background-color: darkgray;
+}
+
+.turquoise {
+    background-color: #c1d9db;
+}
+
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #c1d9db;
-    align-content: center;
 }
 
 header {
@@ -264,6 +270,70 @@ footer {
     border-left: black solid;
 }
 
+/****** Banner ******/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.banner-container {
+     position: relative;
+}
+
+.banner .header3 {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    position: absolute;
+    color: white;
+}
+
+.banner .banner-container {
+    position: relative;
+}
+
+.banner .banner_1 {
+    align-self: center;
+    position: relative;
+}
+
+.banner .banner_2 {
+    align-self: center;
+}
+
+.banner .banner_3 {
+    align-self: center;
+}
+
+.banner .banner_4 {
+    align-self: center;
+}
+
+.banner .header3 a {
+    display: inline-block;
+}
+
+.banner-container img {
+    width: 600px;
+    height: 210px;
+}
+
+.banner-container:hover {
+    filter: saturate(100%);
+    transform: scale(1.01);
+}
+
+/**** Menu ****/
+
 .menu, .menu ul {
     padding: 0;
     margin: 0;
@@ -275,8 +345,6 @@ footer {
     margin: 50px auto;
     border-radius: 6px;
 }
-
-**** Menu ****
 
 .nav-bar {
     padding: 0;
@@ -452,4 +520,3 @@ body {
     background-color: white;
     font-family: "Lucida Console", Courier, monospace;
 }
-
