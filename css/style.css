@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +11,7 @@ h1 {
     font-size: 35px;
     color: #15e5ca;
 }
+
 h2 {
     text-align: center;
 }
@@ -123,7 +123,7 @@ header p {
     width: 1000px;
     margin-top: 150px;
     margin-bottom: 150px;
-    box-shadow: -58px 61px 48px rgba(0,0,0,0.45);
+    box-shadow: -58px 61px 48px rgba(0, 0, 0, 0.45);
 }
 
 #div-left {
@@ -181,12 +181,12 @@ header p {
 }
 
 #div-left #image img {
-    width: 7%; 
-    height: 7%; 
-    object-fit: contain; 
+    width: 7%;
+    height: 7%;
+    object-fit: contain;
 }
 
-#div-left a{
+#div-left a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
@@ -195,7 +195,7 @@ header p {
     padding: 5px 10px;
 }
 
-#div-left a:hover{
+#div-left a:hover {
     color: #cccccc;
     font-weight: bold;
 }
@@ -279,7 +279,7 @@ footer {
 }
 
 .section p {
-    font-family:  Apple Chancery, cursive;
+    font-family: Apple Chancery, cursive;
 }
 
 .section ul {
@@ -301,7 +301,7 @@ footer {
     margin-top: 0;
     color: #61e7e4;
     font-size: 15px;
-} 
+}
 
 .titles h3 {
     font-family: FreeMono, monospace;
@@ -310,23 +310,24 @@ footer {
     text-align: left;
     color: black;
     font-size: 25px;
-} 
+}
 
 .francisco p {
     padding-top: 0;
     margin-top: 0;
     text-align: justify;
     color: black;
-} 
+}
 
 .york p {
     padding-top: 0;
     margin-top: 0;
     text-align: justify;
     color: black;
-} 
+}
 
-.block, .block1 {
+.block,
+.block1 {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -348,6 +349,7 @@ footer {
 .block {
     border-left: black solid;
 }
+
 
 /********** Sign In Page **********/
 
@@ -386,8 +388,7 @@ button .sign-in {
     display: flex;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-        0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -480,6 +481,7 @@ button .sign-in {
     border-radius: 10px;
 }
 
+
 /****** Banner ******/
 
 .banner {
@@ -542,9 +544,11 @@ button .sign-in {
     transform: scale(1.01);
 }
 
+
 /**** Menu ****/
 
-.menu, .menu ul {
+.menu,
+.menu ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -563,7 +567,8 @@ button .sign-in {
     background-color: #3d2c2c;
 }
 
-.menu::before, .menu::after{
+.menu::before,
+.menu::after {
     content: '';
     display: table;
 }
@@ -588,7 +593,7 @@ button .sign-in {
     color: white;
 }
 
-.menu li:hover > a {
+.menu li:hover>a {
     color: white;
     background: blue;
 }
@@ -606,7 +611,7 @@ button .sign-in {
     transition: all .3s ease-in-out;
 }
 
-.menu li:hover > ul {
+.menu li:hover>ul {
     opacity: 1;
     visibility: visible;
     margin: 0;
@@ -642,11 +647,11 @@ button .sign-in {
     background-color: blue;
 }
 
-.menu ul li:first-child > a {
+.menu ul li:first-child>a {
     border-radius: 3px 3px 0 0;
 }
 
-.menu ul li:first-child > a::after {
+.menu ul li:first-child>a::after {
     content: '';
     position: absolute;
     left: 40px;
@@ -675,9 +680,10 @@ button .sign-in {
     border-bottom-color: transparent;
 }
 
-.menu ul li:last-child > a {
-    border-radius: 0 0 3px 3px; 
+.menu ul li:last-child>a {
+    border-radius: 0 0 3px 3px;
 }
+
 
 /****** Gallery ******/
 
@@ -711,7 +717,8 @@ button .sign-in {
     font-weight: bold;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: 5px 15px;
     text-align: center;
 }
@@ -724,6 +731,7 @@ button .sign-in {
     background-color: white;
 }
 
+
 /********** HTML COMPLEX TABLE **********/
 
 .head {
@@ -733,7 +741,7 @@ button .sign-in {
     align-items: center;
     margin-top: 50px;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
     background-color: black;
     border-radius: 10px;
 }
@@ -745,7 +753,7 @@ button .sign-in {
 }
 
 .html-table {
-    box-shadow: -58px 61px 48px rgba(0,0,0,0.45);
+    box-shadow: -58px 61px 48px rgba(0, 0, 0, 0.45);
     background-color: grey;
 }
 
@@ -765,14 +773,17 @@ button .sign-in {
     margin-right: 850px;
 }
 
-.title_h4, .title_span {
+.title_h4,
+.title_span {
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 10px;
     text-align: left;
 }
 
-.table-content, .table-content th, .table-content td {
+.table-content,
+.table-content th,
+.table-content td {
     border: 2px solid black;
     border-collapse: collapse;
 }
@@ -783,7 +794,8 @@ button .sign-in {
     width: 100%;
 }
 
-.table-content th, .table-content td {
+.table-content th,
+.table-content td {
     text-align: center;
     padding: 10px;
     padding-left: 20px;
@@ -796,7 +808,8 @@ button .sign-in {
     border-bottom: 8px solid black;
 }
 
-.top-buttons, .apply {
+.top-buttons,
+.apply {
     border: 2px solid #fefefe;
     background-color: none;
     opacity: 75%;
@@ -854,7 +867,7 @@ button .sign-in {
     flex-direction: row;
     align-content: center;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
     border-radius: 15px;
     position: relative;
     margin-right: -28px;
@@ -868,10 +881,11 @@ button .sign-in {
     padding-bottom: 30px;
     align-items: center;
     position: relative;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.action i, .search i {
+.action i,
+.search i {
     color: #0ca1ff;
     display: flex;
     justify-content: flex-end;
@@ -892,7 +906,7 @@ button .sign-in {
 
 .table-content i {
     color: gray;
-} 
+}
 
 .empty-div {
     background-color: #0ca1ff;
@@ -901,10 +915,11 @@ button .sign-in {
     margin-left: -40px;
 }
 
-.search input, .action input  {
+.search input,
+.action input {
     border-left: 3px white solid;
     border-right: 3px white solid;
-      width: 100%;
+    width: 100%;
     border-radius: 3px;
     padding-right: 30px;
 }
@@ -913,54 +928,55 @@ button .sign-in {
     color: gray;
 }
 
+
 /******** Tutorial Practice ********/
-  
+
 .tutorial-body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-  }
-  
- .tutorial-body ul {
+}
+
+.tutorial-body ul {
     list-style: none;
-  }
-  
-  .tutorial-body ul li {
+}
+
+.tutorial-body ul li {
     padding: 5px;
     background: #f4f4f4;
     margin: 5px 0;
-  }
-  
-  .tutorial-body header {
+}
+
+.tutorial-body header {
     background: #f4f4f4;
     padding: 1rem;
     text-align: center;
-  }
-  
-  .tutorial-body .container {
+}
+
+.tutorial-body .container {
     margin: auto;
     width: 500px;
     overflow: auto;
     padding: 3rem 2rem;
-  }
-  
-  .tutorial-body #my-form {
+}
+
+.tutorial-body #my-form {
     padding: 2rem;
     background: #f4f4f4;
-  }
-  
-  .tutorial-body #my-form label {
+}
+
+.tutorial-body #my-form label {
     display: block;
-  }
-  
-  .tutorial-body #my-form input[type='text'] {
+}
+
+.tutorial-body #my-form input[type='text'] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-  
-  .tutorial-body .btn {
+}
+
+.tutorial-body .btn {
     display: block;
     width: 100%;
     padding: 10px 15px;
@@ -969,154 +985,166 @@ button .sign-in {
     color: #fff;
     border-radius: 5px;
     margin: 5px 0;
-  }
-  
-  .tutorial-body .btn:hover {
+}
+
+.tutorial-body .btn:hover {
     background: #444;
-  }
-  
-  .tutorial-body .bg-dark {
+}
+
+.tutorial-body .bg-dark {
     background: #333;
     color: #fff;
-  }
-  
-  .tutorial-body .error {
+}
+
+.tutorial-body .error {
     background: orangered;
     color: #fff;
     padding: 5px;
     margin: 5px;
-  }
+}
 
-  /********* Slider Page **********/
 
-  #slider {
+/********* Slider Page **********/
+
+#slider {
     margin: 0 auto;
     width: 900px;
     max-width: 100%;
     text-align: center;
-    z-index:2
- }
+    z-index: 2
+}
 
- #slider input {
+#slider input {
     display: none;
- }
+}
 
- #slider label {
-    cursor:pointer;
+#slider label {
+    cursor: pointer;
     text-decoration: none;
- }
+}
 
- #slides {
+#slides {
     padding: 10px;
     background: #fff;
     position: relative;
- }
+}
 
- #overflow {
+#overflow {
     width: 100%;
     overflow: hidden;
- }
+}
 
- #slide1:checked ~ #slides .inner {
+#slide1:checked~#slides .inner {
     margin-left: 0;
- }
+}
 
- #slide2:checked ~ #slides .inner {
+#slide2:checked~#slides .inner {
     margin-left: -100%;
- }
+}
 
- #slide3:checked ~ #slides .inner {
+#slide3:checked~#slides .inner {
     margin-left: -200%;
- }
+}
 
- #slide4:checked ~ #slides .inner {
+#slide4:checked~#slides .inner {
     margin-left: -300%;
- }
+}
 
- #slides .inner {
+#slides .inner {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
     line-height: 0;
     height: 500px;
- }
- #slides .slide {
+}
+
+#slides .slide {
     width: 25%;
-    float:left;
+    float: left;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     color: #fff;
- }
- #slides .slide_1 {
+}
+
+#slides .slide_1 {
     background: #21c29a;
- }
- #slides .slide_2 {
+}
+
+#slides .slide_2 {
     background: #003459;
- }
- #slides .slide_3 {
+}
+
+#slides .slide_3 {
     background: #007EA7;
- }
- #slides .slide_4 {
+}
+
+#slides .slide_4 {
     background: #00A8E8;
- }
- #controls {
+}
+
+#controls {
     margin: -280px 0 0 0;
     width: 100%;
     height: 150px;
     position: relative;
- }
- #controls label {
+}
+
+#controls label {
     transition: opacity 0.2s ease-out;
     display: none;
     width: 60px;
     height: 60px;
     opacity: .4;
- }
- #controls label:hover {
+}
+
+#controls label:hover {
     opacity: 1;
- }
- #slide1:checked ~ #controls label:nth-child(2),
- #slide2:checked ~ #controls label:nth-child(3),
- #slide3:checked ~ #controls label:nth-child(4),
- #slide4:checked ~ #controls label:nth-child(1) {
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(4),
+#slide4:checked~#controls label:nth-child(1) {
     background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-    float:right;
+    float: right;
     margin: 0 30px 0 0;
     display: block;
     background-color: white;
     border: 5px white solid;
     border-radius: 25px;
- }
- #slide1:checked ~ #controls label:nth-last-child(2),
- #slide2:checked ~ #controls label:nth-last-child(3),
- #slide3:checked ~ #controls label:nth-last-child(4),
- #slide4:checked ~ #controls label:nth-last-child(1) {
+}
+
+#slide1:checked~#controls label:nth-last-child(2),
+#slide2:checked~#controls label:nth-last-child(3),
+#slide3:checked~#controls label:nth-last-child(4),
+#slide4:checked~#controls label:nth-last-child(1) {
     background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-    float:left;
+    float: left;
     margin: 0 0 0 30px;
     display: block;
     background-color: white;
     border: 5px white solid;
     border-radius: 25px;
- }
- #bullets {
+}
+
+#bullets {
     margin: 150px 0 0;
     text-align: center;
- }
- #bullets label {
+}
+
+#bullets label {
     display: inline-block;
     width: 15px;
     height: 15px;
-    border-radius:100%;
+    border-radius: 100%;
     background: whitesmoke;
     margin: 0 10px;
- }
- #slide1:checked ~ #bullets label:nth-child(1),
- #slide2:checked ~ #bullets label:nth-child(2),
- #slide3:checked ~ #bullets label:nth-child(3),
- #slide4:checked ~ #bullets label:nth-child(4) {
-    background:black;
- }
+}
 
-
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+    background: black;
+}
