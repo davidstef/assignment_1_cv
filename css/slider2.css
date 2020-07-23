@@ -53,15 +53,6 @@
     #rightButton:hover {
         opacity: 1;
     }
-    /* .bullets {
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        position: absolute;
-        left: 50%;
-        bottom: 5px;
-        background-color: lightslategrey;
-    } */
     
     .slider-container #bulletsContent {
         width: 100%;

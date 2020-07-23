@@ -24,14 +24,10 @@ for (let i = 0; i < images.length; i++) {
     });
     bullets.push(bullet);
 }
-
 bullets[0].classList.add("active");
 
 rightButton.addEventListener('click', () => {
-    if (count == images.length - 1) {
-        count = 0;
-    } else
-        count++;
+    count = count == images.length - 1 ? 0 : count + 1;
     slide.style.transition = 'transform 0.4s ease-in-out';
     slide.style.transform = 'translateX(' + (-size * count) + 'px)';
     document.getElementsByClassName('input-h3')[count].innerText = 'Slider Page ' + (count + 1);
@@ -41,10 +37,7 @@ rightButton.addEventListener('click', () => {
 });
 
 leftButton.addEventListener('click', () => {
-    if (count == 0)
-        count = images.length - 1;
-    else
-        count--;
+    count = count == 0 ? images.length - 1 : count - 1;
     slide.style.transition = 'transform 0.4s ease-in-out';
     slide.style.transform = 'translateX(' + (-size * count) + 'px)';
     document.getElementsByClassName('input-h3')[count].innerText = 'Slider Page ' + (count + 1);
