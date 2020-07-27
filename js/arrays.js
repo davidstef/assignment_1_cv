@@ -6,8 +6,7 @@
 const array1 = ['perfect', 'makes', 'practice'];
 
 function reverseStrings(array1) {
-    const reversed = array1.reverse();
-    return reversed
+    return array1.reverse();
 }
 console.log('1. Reversed: ', reverseStrings(array1));
 
@@ -22,23 +21,17 @@ console.log('1. Reversed: ', reverseStrings(array1));
 // Array 2: [4, 8, 9, 3]
 // Result: null
 console.log("2.");
+const a = [4, 8, 12, 9, 3];
+const b = [4, 8, 9, 3];
 
 function diffElements(a, b) {
-    a.forEach(value => {
-        if (!b.includes(value)) {
-            console.log('Different element:', value);
-        }
+    const notFound = a.find(value => {
+        return (!b.includes(value)) ? true : false;
     });
-    b.forEach(value => {
-        if (!a.includes(value)) {
-            console.log('Different element:', value);
-        }
-    });
+    return notFound;
 }
 
-const a = [4, 8, 12, 9, 3, 16];
-const b = [4, 8, 9, 3, 34];
-diffElements(a, b);
+console.log('Different elements:', diffElements(a, b));
 
 /*
 3. Find smallest number in array
@@ -49,11 +42,13 @@ Result: 1
 
 const array3 = [3, 6, 4, 2, 1, 5];
 
-function findMin(array3) {
-    var minimum = Math.min(...array3);
-    return minimum;
-}
-console.log('3. Minimum is:', findMin(array3));
+const findMin = array3.reduce(function(min, val) {
+    if (val < min) {
+        min = val;
+    }
+    return min;
+});
+console.log('3. Minimum is:', findMin);
 
 /* 
 4. Find third smallest number in array
@@ -63,18 +58,8 @@ Result: 3
 */
 
 const array4 = [3, 6, 4, 2, 1, 5];
-
-function find3Min(array4) {
-    let i = 0;
-    while (i < 3) {
-        var minimum3 = Math.min(...array4);
-        let index = array4.indexOf(minimum3);
-        array4.splice(index, 1);
-        i++;
-    }
-    return minimum3;
-}
-console.log('4. Minimum is:', find3Min(array4));
+const sorted = array4.sort();
+console.log('4. Minimum is:', sorted[2]);
 
 /*
 5. Write a
@@ -117,45 +102,47 @@ const sudoku = [
     [2, 4, 3, 5, 6, 1, 9, 7, 8],
     [1, 9, 5, 2, 8, 7, 6, 3, 4]
 ];
+let ok = true;
 
 function isValid(sudoku) {
+    if (sudoku.length !== 9)
+        return false;
     sudoku.forEach(function(array) {
-        if (sudoku.length !== 9 || array.length !== sudoku.length) {
-            return false;
+        if (array.length != 9) {
+            ok = false;
         }
     });
     sudoku.forEach(function(array) {
         array.forEach(function(element) {
             if (element < 1 || element > 9) {
-                return false;
+                ok = false;
             }
             var hasDuplicate = array.some((element, i) => array.indexOf(element) !== i);
             if (hasDuplicate === true) {
-                return false;
+                ok = false;
             }
         });
     });
-    for (let j = 0; j < 9; j++) {
-        for (let i = 0; i < 9; i++) {
-            for (var k = 0; k < 9; k++) {
-                if (k != i && sudoku[k][j] == sudoku[i][j])
+    for (let col = 0; col < 9; col++) {
+        for (let row = 0; row < 9; row++) {
+            for (let elemIndex = 0; elemIndex < 9; elemIndex++) {
+                if (elemIndex != row && sudoku[elemIndex][col] == sudoku[row][col])
                     return false;
             }
-            var startY = Math.floor(i / 3) * 3;
-            for (var ii = startY; ii < startY + 3; ii++) {
-                var startX = Math.floor(j / 3) * 3;
-                for (jj = startX; jj < startX + 3; jj++) {
-                    if ((jj != j || ii != i) && sudoku[ii][jj] == sudoku[i][j]) {
+            var startRow = Math.floor(row / 3) * 3;
+            for (let rowSquare = startRow; rowSquare < startRow + 3; rowSquare++) {
+                var startCol = Math.floor(col / 3) * 3;
+                for (let colSquare = startCol; colSquare < startCol + 3; colSquare++) {
+                    if ((colSquare != col || rowSquare != row) && sudoku[rowSquare][colSquare] == sudoku[row][col]) {
                         return false;
                     }
                 }
             }
         }
     }
-    return true;
+    return ok;
 }
 console.log('5. is valid?:', isValid(sudoku));
-
 
 /*
 6. Write a
@@ -170,18 +157,27 @@ Input: ['a', ['b', 2], 3, null, [
 ]]
 Output: ['a', 'b', 2, 3, null, 4, 'c'] 
 */
-
 const array61 = [1, [2, 3], 4, 5, [6, [7, 8, [9, 10, [11]]]]];
 const array62 = ['a', ['b', 2], 3, null, [
     [4],
     ['c']
 ]];
 
+function flatArray(array) {
+    let flatedArr = [];
+    array.forEach(element => {
+        if (Array.isArray(element)) {
+            flatedArr = flatedArr.concat(flatArray(element));
+        } else {
+            flatedArr.push(element);
+        }
+    });
+    return flatedArr;
+}
+
 function flatDeep(arr, d = 1) {
     return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), []) :
         arr.slice();
 };
-const flated1 = flatDeep(array61, Infinity);
-console.log('6.1:', flated1);
-const flated2 = flatDeep(array62, Infinity);
-console.log('6.2:', flated2);
+
+console.log('flated Array:', flatArray(array61));
